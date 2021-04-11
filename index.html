@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    .navigation ul {           /* 導覽列整體設定*/
+    margin: 0;             /* 取消外距，設定為0*/
+    padding: 4px;          /* 內部距離，設定為4px*/
+    text-align: center;    /* 文字置中*/
+    }
+    .navigation ul li {        /* 按鈕個別設定*/
+        list-style-type: none; /* 取消前面的小黑點*/
+        display: inline;       /* 成一行排列*/
+        margin: 0 5px;         /* 外距設定為0.5px*/
+        font-size: 15px;       /* 字體大小15px*/
+    }
+    .navigation ul li a {      /* 超連結設定*/
+        color:#FB8F67;         /* 文字顏色設定*/
+        text-decoration: none; /* 文字無底線*/
+    }
+    .navigation ul li a:hover {/* 超連結滑鼠滑過設定*/
+        color: #000;        /* 文字顏色設定*/
+        text-decoration: none;/* 文字無底線*/
+    }
+    .wrap{
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .pic{
+        width: 55%;
+        
+    }
+    .txt{
+        background-color: #F1E8B8;
+        width: 100%;
+        padding: 50px 30px;
+        box-sizing: border-box;
+        position: relative;
+        z-index:1;
+    }
+    .wrap>:first-child{
+        margin-right: -50px;
+    }
+    .main-footer{
+          padding: 150px 0 0;
+          background-color: #26547C;
+    }
+    .main-footer .container{
+        display: flex;
+        width: 1200px;
+        margin: auto;
+    }
+    .footer-item h4{
+      color:#fff;
+      text-decoration: none;
+      border-bottom:2px solid white;
+    }
+    .footer-item nav a{
+        color:#fff;
+        line-height: 1.4;
+        text-decoration: none;
+        padding: 5px 0;
+    }
+    .footer-item{
+        margin: 0 20px;
+    }
+    .conpyright{
+        text-align: center;
+        margin: 150px 0 0;
+        padding: 10px 0;
+        background-color: #FB8F67;
+        color: white;
+
+    }
+    
+  </style>
+  </head>
+  <body>
+
+    <!-- 頁首 導覽列 -->
+    <nav class="navigation">
+      <a href="index.html"><img src="logo.png" style="display:block; margin:auto;"alt=""></a>
+      <ul>
+        <li class="nav-item dropdown">
+          <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            園所介紹
+          </a>
+          <div class="dropdown-menu">
+              <a class="dropdown-item" href="a1.html">關於我們</a>
+              <a class="dropdown-item" href="a2.html">師資介紹</a>
+              <a class="dropdown-item" href="a3.html">環境介紹</a>
+          </div>
+        </li>
+          <li><a href="#concept">教學理念</a></li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              班級介紹
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">一般班級</a>
+                <a class="dropdown-item" href="#">多元班級</a>
+            </div>
+          </li>
+          <li><a href="#html">活動寫真</a></li>
+          <li><a href="#css">最新消息</a></li>
+          <li><a href="#css">家長留言板</a></li>
+          <li><a href="#css">線上預約</a></li>
+      </ul>
+    </nav>
+    
+    <!-- 輪播 -->
+    <div id="carouselExampleCaptions" class="carousel slide mb-4" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="aa.jpg" class="d-block w-100" style="height: 634px;"alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bb.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="bb.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- 導覽列大綱 -->
+    <div class="container">
+      <div class="card-group mb-4">
+        <div class="card">
+          <img src="a3/eat.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">園所介紹</h5>
+            <p class="card-text">歡迎您進入樂活家族</p>
+            <a href="a1.html" class="btn btn-primary">看更多</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="a3/eat.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">專業師資</h5>
+            <p class="card-text">快樂活潑的老師才能教出快樂活潑的孩子</p>
+            <a href="a1.html" class="btn btn-primary">看更多</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="a3/eat.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">教學理念</h5>
+            <p class="card-text">平安.健康與品德是首要</p>
+            <a href="a1.html" class="btn btn-primary">看更多</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="a3/eat.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">線上預約</h5>
+            <p class="card-text">感謝您願意讓樂活成為寶貝的啟蒙教育園</p>
+            <a href="a1.html" class="btn btn-primary">看更多</a>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      <!-- 導覽列大綱  end-->
+
+      <!-- 教育宗旨-->
+      <div class="container" style="background-color: #26547C;">
+        <div class="wrap">
+            <div>
+                <div class="pic">
+                    <img src="holder.js/500x300" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="txt">
+                    <h2>以孩子為主體，並尊重差異</h2>
+                    <p>有別於傳統上對下教育強調灌輸和目的導向，千心特別重視孩子的生活經驗、體驗參與和選擇機會。</p>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="wrap">
+            <div>
+                <div class="txt text-right">
+                    <h2>強調做中學，重視生活常規、日常經驗、潛能發展與經驗探索</h2>
+                    <p>實際上，所有的日常生活經驗都是孩子學習的一環，所有周遭的人皆是孩子的導師。</p>
+                </div>
+            </div>
+            <div>
+                <div class="pic">
+                    <img src="holder.js/500x300" alt="">
+                </div>
+            </div>
+        </div>
+   
+    
+        <div class="wrap">
+            <div>
+                <div class="pic">
+                    <img src="holder.js/500x300" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="txt">
+                    <h2>在遊戲中快樂學習，給予孩子自由想像和創造的機會。</h2>
+                    <p>對學前教育階段的孩子而言，有些學習必須是「無目的」的，如此，孩子才有自由表達和自由想像的空間，「創造力」才會在不經意中被激發。</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    <!-- 地圖+公告頁面--> 
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-8 mb-4">
+            <h2>校園位置</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.254114690505!2d120.42730081543091!3d23.70261779651587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eba072ee22f11%3A0x558aed05907207d7!2z5ZyL56uL6JmO5bC-56eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1616643970954!5m2!1szh-TW!2stw" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#1" >最新消息</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#2" >活動相簿</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  data-toggle="tab" href="#3">家長留言板</a>
+              </li>
+            </ul>
+            
+            <!-- 最新消息--> 
+            <div class="tab-content">
+              <div  id="#1" class="tab-pane active">
+                <h2 class="mt-5">最新消息</h2>
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        4/2（五）～4/5（一）連假公告
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      4/2（五）～4/5（一）連假公告</br>
+                      寶貝們放假囉!祝您連假假期愉快</br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        全園大消毒公告
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                      4/1（四）幼生下課後進行全園大消毒，因此當天下午4點開始老師們需要打包教室物品，在此請家長們配合盡量提早到園接回幼生，感謝您的合作！</br>
+                      ※當天幼生盥洗用品帶回清洗</br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        各班春季戶外踏青活動時間、地點
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                      各班春季戶外踏青活動時間、地點</br>
+                      3/16(二)上午9:00 綿羊、白兔 →中都濕地公園</br>
+                      3/17(二)上午9:00 星星、月亮 →美術館</br>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingfour">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                        教育局提供給幼兒園的防疫口罩之相關規範
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#accordionExample">
+                    <div class="card-body">
+                      本園已領回教育局提供給幼兒園的防疫口罩,該配給有使用條件之限定,口罩應用規範：</br>
+                      （一)此兒童口罩為緊急支援之「防疫備用物資」，不提供一般之使用，僅提供臨時性發現幼兒於園內出現發燒、咳嗽、喉嚨痛、呼吸急促等不適或緊急狀況者配戴，並應請父母儘速陪同就醫，返家休息。</br>
+                      （二）幼兒園應指定管理人員 1 名，遇緊急狀況需提供備用口罩時，應登記提供日期、使用者姓名、提供理由，並留存園內備查(使用登記清冊格式俟教育部公布後提供）教育部或教育局於必要時得調查使用情形，以利瞭解運用情形。本園將視幼兒實際健康狀況提供,並造冊。一般健康幼兒入園仍請家長自備口罩防疫。以上,敬請配合體諒。</br>
+                      樂活幼兒園 關心您</br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+              
+            </div>
+              <div id="#2" class="tab-pane fade">
+                <h2 class="mt-5">活動相簿</h2>
+              </div>
+
+              <div id="#3" class="tab-pane fade">
+                <h2 class="mt-5">家長留言板</h2>
+              </div>
+              
+            </div>
+      </div>
+    </div>
+
+    <a href="#"><img src="top.png" class="float-right" style="width: 10%"alt=""></a>
+     <!-- 頁尾 -->
+     <div class="main-footer">
+      <div class="container">
+         <div class="footer-item">
+             <h4>園所介紹</h4>
+             <nav>
+                 <ul>
+                  <li><a href="a1.html">關於我們</a></li>
+                  <li><a href="a2.html">師資介紹</a></li>
+                  <li><a href="a3.html">環境介紹</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>教學理念</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">教學理念</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>班級介紹</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">一般班級</a></li>
+                     <li><a href="">多元班級</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>活動寫真</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">活動寫真</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>最新消息</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">最新消息</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>家長留言板</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">家長留言板</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+         <div class="footer-item">
+             <h4>線上預約</h4>
+             <nav>
+                 <ul>
+                     <li><a href="">線上預約</a></li>
+                 </ul>
+                 
+             </nav>
+         </div>
+      </div>
+      <div class="conpyright">
+         conpyright &copy;2021 樂活幼兒園
+      </div>
+  </div>
+  <!-- 頁尾 END-->
+   
+    
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
